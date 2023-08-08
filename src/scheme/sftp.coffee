@@ -1,4 +1,4 @@
-ssh2	= require "ssh2"
+{ Client }	= require "ssh2"
 Signal	= require "signals"
 fs 		= require "fs"
 
@@ -19,7 +19,7 @@ module.exports = class SFTP
 		@closing 	= false
 
 		# Create a new instance of the FTP
-		@sftp = new ssh2()
+		@sftp = new Client()
 		@sftp.on "error", => @failed.dispatch() unless @closing
 		@sftp.on "close", (hadError) =>
 			if @hadError
