@@ -13,24 +13,13 @@ Install DPLOY and it's dependancies globally by running:
 npm i github:yjh1411/dploy.git
 ```
 
-## Help
-```
-dploy --help
-```
-
-## Version
-```
-dploy --version
-```
-
-## Commands
-### dploy
-Will deploy the first environment that you have on your `dploy.yaml`
 
 
 ## add
-ed25519 지원하도록 ssh2 v1.14 까지 업그레이드 적용
 
+```
+ed25519 지원하도록 ssh2 v1.14 까지 업그레이드 적용
+```
 
 
 
